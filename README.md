@@ -37,9 +37,11 @@ Primero, clona el repositorio en tu máquina local:
 ```bash
 git clone https://github.com/Richard1992/arquicleta.git
 cd arquicleta-main
+```
 
 ## 2. Configuración de las bases de datos
 
+```bash
 spring.datasource.url=jdbc:mysql://localhost:3306/usuarios_db
 spring.datasource.username=tu_usuario
 spring.datasource.password=tu_password
@@ -51,20 +53,26 @@ spring.datasource.username=tu_usuario
 spring.datasource.password=tu_password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+```
 
 ## 2. Ejecutar el proyecto
 
 # Compilar el proyecto
+```
 mvn clean install
+```
 
 # Ejecutar el módulo de usuarios
+```
 cd usuarios
 mvn spring-boot:run
+```
 
 # Ejecutar el módulo de grupos
+```
 cd ../grupos
 mvn spring-boot:run
-
+```
 
 Usando Docker (opcional)
 
@@ -72,6 +80,7 @@ Puedes usar Docker para correr las bases de datos MySQL y PostgreSQL sin tener q
 
 Ejemplo de un archivo docker-compose.yml para MySQL y PostgreSQL:
 
+```
 version: '3'
 services:
   mysql:
@@ -100,10 +109,11 @@ services:
 volumes:
   mysql-data:
   postgres-data:
+```
 
-
+```
 docker-compose up -d
-
+```
 ---
 
 ### **Explicación de las secciones del README.md:**
