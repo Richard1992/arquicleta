@@ -1,0 +1,84 @@
+# Maven build files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+maven.log
+mvnw
+mvnw.cmd
+.mvn/
+
+# Eclipse/IntelliJ IDEA project files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+*.ipr
+*.iws
+
+# Logs
+*.log
+logs/
+*.pid
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot
+spring.log
+
+# Git directories
+/.git/
+
+# Configuración de entorno local
+.env
+.env.local
+.env.*.local
+
+# Archivos de construcción de Gradle
+.gradle/
+build/
+
+# Resultados de las pruebas
+test-output/
+surefire-reports/
+
+# Windows
+*.exe
+*.dll
+*.bat
+*.sh
+
+# Archivos temporales de diseño o documentación
+*.bak
+*.tmp
+*.swp
+*.swo
+/docs/
+
+# Artefactos adicionales de empaquetado
+*.zip
+*.tar.gz
+
+# CI/CD
+.gitlab-ci.yml

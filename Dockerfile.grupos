@@ -1,0 +1,14 @@
+# Fase de ejecución para el módulo "grupos"
+FROM openjdk:17-jdk-slim AS grupos
+
+# Define el directorio de trabajo para grupos
+WORKDIR /app
+
+# Copia el archivo JAR del módulo "grupos"
+COPY grupos/target/grupos-0.0.1.jar /app/grupos.jar
+
+# Expone el puerto 8081 para la aplicación "grupos"
+EXPOSE 8081
+
+# Comando para ejecutar el archivo JAR de "grupos"
+ENTRYPOINT ["java", "-jar", "grupos.jar"]

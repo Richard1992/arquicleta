@@ -1,0 +1,14 @@
+# Fase de ejecución para el módulo "usuarios"
+FROM openjdk:17-jdk-slim AS usuarios
+
+# Define el directorio de trabajo para usuarios
+WORKDIR /app
+
+# Copia el archivo JAR del módulo "usuarios"
+COPY usuarios/target/usuarios-0.0.1.jar /app/usuarios.jar
+
+# Expone el puerto 8080 para la aplicación "usuarios"
+EXPOSE 8080
+
+# Comando para ejecutar el archivo JAR de "usuarios"
+ENTRYPOINT ["java", "-jar", "usuarios.jar"]
